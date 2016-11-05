@@ -2,12 +2,11 @@
   <div id="app">
     <img src="./assets/logo.png">
     <h1>{{ msg }}</h1>
-    <date-picker></date-picker>
+    <z-datepicker :defaultDay="'2012/12/21'" @selected="log($event)"></z-datepicker>
   </div>
 </template>
-
 <script>
-  import datePicker from './component/datePicker.vue'
+//import datePicker from './component/datePicker.vue'
 export default {
   name: 'app',
   data () {
@@ -15,7 +14,12 @@ export default {
       msg: 'Welcome to Vue.js2.0 ZdatePicker'
     }
   },
-  components: {datePicker}
+  methods: {
+    log (data) {
+      console.log(data)
+    }
+  }
+//  components: {datePicker}
 }
 </script>
 
