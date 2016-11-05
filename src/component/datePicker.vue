@@ -1,6 +1,6 @@
 <template>
   <div class="datePicker">
-    <input type="text" autocomplete="off" readonly :value="day" @blur="hide" @focus="show">
+    <input type="text" autocomplete="off" :value="day" @blur="hide" @focus="show">
     <transition name='pickerContainer'>
       <div key='pickerCnt' v-show="showDatePicker" class="cnt">
         <div class='dateTitle'>

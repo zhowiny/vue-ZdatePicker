@@ -1,12 +1,13 @@
 <template>
   <div id="app">
+    <z-datepicker @selected="log($event)"></z-datepicker>
+    <br>
     <img src="./assets/logo.png">
     <h1>{{ msg }}</h1>
-    <z-datepicker :defaultDay="'2012/12/21'" @selected="log($event)"></z-datepicker>
+    <!-- :defaultDay="'2016/11/11'"-->
   </div>
 </template>
 <script>
-//import datePicker from './component/datePicker.vue'
 export default {
   name: 'app',
   data () {
@@ -16,10 +17,10 @@ export default {
   },
   methods: {
     log (data) {
-      console.log(data)
+      this.msg = '选中的日期: ' + data.date
+//      console.log(data)
     }
   }
-//  components: {datePicker}
 }
 </script>
 
