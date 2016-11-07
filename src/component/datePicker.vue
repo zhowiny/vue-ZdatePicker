@@ -206,12 +206,8 @@
     display: inline-block;
   }
   .datePicker>input {
-    padding: 0 10px;
-    width: calc(100% - 22px);
-    width: -o-calc(100% - 22px);
-    width: -webkit-calc(100% - 22px);
-    width: -moz-calc(100% - 22px);
-    width: -ms-calc(100% - 22px);
+    padding: 0 2%;
+    width: 95%;
     height: 1.6em;
   }
   .cnt {
@@ -225,11 +221,7 @@
   .dateTitle .nextBtn, .dateTitle .preBtn {
     background: lightblue;
     color: #fff;
-    width: calc(100% / 7 * 1.5);
-    width: -o-calc(100% / 7 * 1.5);
-    width: -webkit-calc(100% / 7 * 1.5);
-    width: -moz-calc(100% / 7 * 1.5);
-    width: -ms-calc(100% / 7 * 1.5);
+    width: 21%;
   }
   .dateTitle span {
     display: inline-block;
@@ -237,34 +229,18 @@
     font-size: 14px;
     padding: 3px 0;
     text-align: center;
-    width: calc(100% / 7 * 4);
-    width: -o-calc(100% / 7 * 4);
-    width: -ms-calc(100% / 7 * 4);
-    width: -moz-calc(100% / 7 * 4);
-    width: -webkit-calc(100% / 7 * 4);
+    width: 58%;
     cursor: pointer;
   }
   .month {
     position: absolute;
-    width: calc(100% / 7 * 4);
-    width: -o-calc(100% / 7 * 4);
-    width: -ms-calc(100% / 7 * 4);
-    width: -moz-calc(100% / 7 * 4);
-    width: -webkit-calc(100% / 7 * 4);
+    width: 58%;
     font-size: 0;
-    left:calc(100% /7 * 1.5);
-    left:-o-calc(100% /7 * 1.5);
-    left:-ms-calc(100% /7 * 1.5);
-    left:-moz-calc(100% /7 * 1.5);
-    left:-webkit-calc(100% /7 * 1.5);
+    left: 21%;
   }
   .month span {
     font-size: 14px;
-    width: calc(50% - 2px);
-    width: -o-calc(50% - 2px);
-    width: -ms-calc(50% - 2px);
-    width: -moz-calc(50% - 2px);
-    width: -webkit-calc(50% - 2px);
+    width: 48%;
     background-color: rgba(255,255,255,.9);
     border: 1px solid #efefef;
     cursor: pointer;
@@ -289,11 +265,7 @@
 
   .list-item {
     display: inline-block;
-    width: calc((100% - 14px) / 7);
-    width: -o-calc((100% - 14px) / 7);
-    width: -ms-calc((100% - 14px) / 7);
-    width: -moz-calc((100% - 14px) / 7);
-    width: -webkit-calc((100% - 14px) / 7);
+    width: 13.4%;
     border: 1px solid #eee;
     text-align: center;
     transition: all .5s;

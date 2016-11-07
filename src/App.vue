@@ -5,7 +5,6 @@
     <img src="./assets/logo.png">
     <h1>{{ msg }}</h1>
     <div>{{aaa}}</div>
-    <!-- :defaultDay="'2016/11/11'"-->
   </div>
 </template>
 <script>
