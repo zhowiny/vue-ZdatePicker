@@ -4,6 +4,7 @@
     <br>
     <img src="./assets/logo.png">
     <h1>{{ msg }}</h1>
+    <div>{{aaa}}</div>
     <!-- :defaultDay="'2016/11/11'"-->
   </div>
 </template>
@@ -12,13 +13,16 @@ export default {
   name: 'app',
   data () {
     return {
-      msg: 'Welcome to Vue.js2.0 ZdatePicker'
+      msg: 'Welcome to Vue.js2.0 ZdatePicker',
+      aaa: ''
     }
   },
   methods: {
     log (data) {
+      data.date = new Date(data.date).toLocaleDateString('zh-cn')
       this.msg = '选中的日期: ' + data.date
-//      console.log(data)
+      this.aaa = JSON.stringify(data)
+      console.log(data.date.toLocaleString())
     }
   }
 }

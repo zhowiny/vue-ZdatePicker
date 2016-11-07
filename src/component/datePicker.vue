@@ -38,7 +38,7 @@
       choiceYear: Number,
       defaultDay: {
         type: String,
-        default: new Date().toLocaleDateString()
+        default: new Date().toDateString()
       }
     },
     data () {
@@ -68,7 +68,7 @@
     computed: {
       formatDay () {
         return {
-          d: new Date(this.defaultDay).toLocaleDateString('zh-CN'),
+          d: new Date(this.defaultDay).toDateString(),
           m: this.choiceMonth || new Date(this.defaultDay).getMonth(),
           y: this.choiceYear || new Date(this.defaultDay).getFullYear()
         }
@@ -181,7 +181,7 @@
         for (let i = 0; i < 42; i++) {
           let blockTime = new Date(startDay.getTime() + i * 24 * 60 * 60 * 1000) // 每一格中对应的时间
           this.items[i].Day = blockTime.getDate()  // 每一格中的数字
-          this.items[i].date = blockTime.toLocaleDateString('zh-CN') // 每一个中对应的时间
+          this.items[i].date = blockTime.toDateString() // 每一个中对应的时间
           this.$set(this.items[i], 'selected', this.items[i].date === this.selectedTime)  // 设置是否选中状态
         }
       },
