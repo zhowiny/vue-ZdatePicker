@@ -208,6 +208,10 @@
   .datePicker>input {
     padding: 0 10px;
     width: calc(100% - 22px);
+    width: -o-calc(100% - 22px);
+    width: -webkit-calc(100% - 22px);
+    width: -moz-calc(100% - 22px);
+    width: -ms-calc(100% - 22px);
     height: 1.6em;
   }
   .cnt {
@@ -221,7 +225,11 @@
   .dateTitle .nextBtn, .dateTitle .preBtn {
     background: lightblue;
     color: #fff;
-    width: calc(100% / 7 * 1.5)
+    width: calc(100% / 7 * 1.5);
+    width: -o-calc(100% / 7 * 1.5);
+    width: -webkit-calc(100% / 7 * 1.5);
+    width: -moz-calc(100% / 7 * 1.5);
+    width: -ms-calc(100% / 7 * 1.5);
   }
   .dateTitle span {
     display: inline-block;
@@ -230,17 +238,33 @@
     padding: 3px 0;
     text-align: center;
     width: calc(100% / 7 * 4);
+    width: -o-calc(100% / 7 * 4);
+    width: -ms-calc(100% / 7 * 4);
+    width: -moz-calc(100% / 7 * 4);
+    width: -webkit-calc(100% / 7 * 4);
     cursor: pointer;
   }
   .month {
     position: absolute;
     width: calc(100% / 7 * 4);
+    width: -o-calc(100% / 7 * 4);
+    width: -ms-calc(100% / 7 * 4);
+    width: -moz-calc(100% / 7 * 4);
+    width: -webkit-calc(100% / 7 * 4);
     font-size: 0;
     left:calc(100% /7 * 1.5);
+    left:-o-calc(100% /7 * 1.5);
+    left:-ms-calc(100% /7 * 1.5);
+    left:-moz-calc(100% /7 * 1.5);
+    left:-webkit-calc(100% /7 * 1.5);
   }
   .month span {
     font-size: 14px;
     width: calc(50% - 2px);
+    width: -o-calc(50% - 2px);
+    width: -ms-calc(50% - 2px);
+    width: -moz-calc(50% - 2px);
+    width: -webkit-calc(50% - 2px);
     background-color: rgba(255,255,255,.9);
     border: 1px solid #efefef;
     cursor: pointer;
@@ -266,6 +290,10 @@
   .list-item {
     display: inline-block;
     width: calc((100% - 14px) / 7);
+    width: -o-calc((100% - 14px) / 7);
+    width: -ms-calc((100% - 14px) / 7);
+    width: -moz-calc((100% - 14px) / 7);
+    width: -webkit-calc((100% - 14px) / 7);
     border: 1px solid #eee;
     text-align: center;
     transition: all .5s;
@@ -276,17 +304,33 @@
   .list-enter {
     opacity: 0;
     transform: translateY(30px) scale(.5) rotate(45deg);
+    -o-transform: translateY(30px) scale(.5) rotate(45deg);
+    -ms-transform: translateY(30px) scale(.5) rotate(45deg);
+    -moz-transform: translateY(30px) scale(.5) rotate(45deg);
+    -webkit-transform: translateY(30px) scale(.5) rotate(45deg);
   }
 
   .list-leave-active {
     opacity: 0;
     transform: translateY(-30px) scale(.5) rotate(-45deg);
+    -o-transform: translateY(-30px) scale(.5) rotate(-45deg);
+    -ms-transform: translateY(-30px) scale(.5) rotate(-45deg);
+    -moz-transform: translateY(-30px) scale(.5) rotate(-45deg);
+    -webkit-transform: translateY(-30px) scale(.5) rotate(-45deg);
     position: absolute;
   }
   .pickerContainer-enter-active,.pickerContainer-leave-active {
     transition: all .5s;
+    -o-transition: all .5s;
+    -ms-transition: all .5s;
+    -moz-transition: all .5s;
+    -webkit-transition: all .5s;
   }
   .pickerContainer-enter,.pickerContainer-leave-active {
     transform:scaleY(0);
+    -o-transform:scaleY(0);
+    -ms-transform:scaleY(0);
+    -moz-transform:scaleY(0);
+    -webkit-transform:scaleY(0);
   }
 </style>
