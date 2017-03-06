@@ -219,7 +219,7 @@
     position: relative;
   }
   .dateTitle .nextBtn, .dateTitle .preBtn {
-    background: lightblue;
+    background: cornflowerblue;
     color: #fff;
     width: 21%;
   }
@@ -246,18 +246,19 @@
     cursor: pointer;
   }
   .month .selected {
-    background: #aaf;
+    background: cornflowerblue;
   }
   .list-item.preMonth, .list-item.nextMonth {
     background: #fff;
   }
 
   .list-item.selected {
-    background: #aaf;
+    background: cornflowerblue;
+    color: #fff;
   }
 
   .list-item.week {
-    background: #afa;
+    background: #fff;
     font-size: 14px;
     padding: 3px 0;
     font-style: normal;
@@ -270,7 +271,7 @@
     text-align: center;
     transition: all .5s;
     cursor: pointer;
-    background: #ffa;
+    background: aliceblue;
   }
 
   .list-enter {
@@ -306,3 +307,4 @@
     -webkit-transform:scaleY(0);
   }
 </style>
+
