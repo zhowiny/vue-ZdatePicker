@@ -271,7 +271,7 @@
     text-align: center;
     transition: all .5s;
     cursor: pointer;
-    background: aliceblue;
+    background: #cae6ff;
   }
 
   .list-enter {
